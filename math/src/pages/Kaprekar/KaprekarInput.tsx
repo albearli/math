@@ -7,8 +7,12 @@ export default function KaprekarInput(): React.ReactElement {
 
   const handleClick = () => {
     const value = parseInt(input.current?.value ?? "");
-    if (value == null || isNaN(value) || value > 9999) {
+    if (value == null || isNaN(value)) {
       alert("Please input a valid integer");
+      return;
+    }
+    if (value > 9999) {
+      alert("Please input an integer under 9999");
       return;
     }
     if (value % 1111 === 0) {
