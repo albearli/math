@@ -42,7 +42,7 @@ export default function KaprekarInput(): React.ReactElement {
           />
         </div>
         <button
-          className="ml-4 p-1 rounded-full border-2 border-indigo-500"
+          className="ml-4 p-1 rounded-full border-2 border-indigo-500 hover:bg-indigo-300"
           onClick={handleClick}
         >
           Calculate
